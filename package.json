@@ -1,0 +1,54 @@
+{
+  "name": "dragonball",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "electron/main.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bluebird": "^3.7.2",
+    "carbon-components": "10.7.4",
+    "carbon-components-react": "7.7.4",
+    "carbon-icons": "7.0.7",
+    "date-fns": "^2.8.1",
+    "electron-is-dev": "^1.1.0",
+    "emotion": "10.0.23",
+    "formik": "2.0.8",
+    "lodash": "^4.17.15",
+    "query-string": "6.9.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.5",
+    "electron-builder": "^21.2.0",
+    "icon-gen": "^2.0.0",
+    "react-scripts": "3.3.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:electron": "electron ./electron/main.js",
+    "build": "react-scripts build",
+    "postbuild": "robocopy electron build/electron & exit 0",
+    "package": "electron-builder build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ],
+  "build": {
+    "productName": "드래곤볼",
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    },
+    "extraMetadata": {
+      "main": "build/electron/main.js"
+    }
+  },
+  "homepage": "./",
+  "proxy": "https://www.wanted.co.kr"
+}
