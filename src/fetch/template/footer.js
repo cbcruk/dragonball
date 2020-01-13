@@ -482,6 +482,9 @@ function footer(categoryId, hasBanner) {
                               &nbsp;직업소개사업등록번호 :
                               제2015-3780218-14-5-00014호 | 02-539-7118<br />
                               <br />
+                              이 메일을 더이상 받고 싶지 않다면?<br>
+                              아래 unsubscribe 버튼을 눌러주세요.<br />
+                              <br />
                               Want to change how you receive these emails?<br />
                               You can
                               <a href="*|UPDATE_PROFILE|*"
