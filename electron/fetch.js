@@ -1,5 +1,5 @@
 const Axios = require('axios')
-const { MAILCHIMP_API_KEY } = require('../env.json')
+const { MAILCHIMP_API_KEY } = require('./env.json')
 
 function postTemplates(data) {
   return Axios({
