@@ -472,11 +472,12 @@ function footer(categoryId, hasBanner) {
                         <tbody>
                           <tr>
                             <td
+                              mc:edit="footer_content"
                               valign="top"
                               class="mcnTextContent"
                               style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
                             >
-                              Copyright © 2019 Wantedlab Inc. All rights
+                              Copyright © 2020 Wantedlab Inc. All rights
                               reserved.&nbsp;서울 강남구 테헤란로 142 &nbsp;I
                               &nbsp;사업자등록번호 : 299-86-00021 &nbsp;I
                               &nbsp;직업소개사업등록번호 :
