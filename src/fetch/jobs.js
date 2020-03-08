@@ -1,5 +1,5 @@
 import bluebird from 'bluebird'
-import { flow, flatten, uniqBy } from 'lodash/fp'
+import { flow, flatten, uniqBy, get } from 'lodash/fp'
 import { GET } from '../http'
 import { JOB_CATEGORIES } from '../constants'
 import getTagsById from './tags'
@@ -18,7 +18,9 @@ async function fetchJobs(next, items = []) {
 
 function getCompanies({ jobs, companyIds, categoryId }) {
   return companyIds.split(',').map(id => {
-    const companyJobs = jobs.filter(job => job.company?.id === parseInt(id, 10))
+    const companyJobs = jobs.filter(
+      job => get('company.id')(job) === parseInt(id, 10)
+    )
 
     if (companyJobs.length === 0) {
       return null

@@ -1,0 +1,21 @@
+{
+  "name": "dragonball",
+  "version": "1.0.0",
+  "description": "7개의 구슬을 모아라",
+  "homepage_url": "https://github.com/cbcruk/dragonball",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "https://*.wanted.co.kr/",
+    "https://us11.api.mailchimp.com/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "드래곤볼",
+    "default_popup": "popup.html"
+  }
+}

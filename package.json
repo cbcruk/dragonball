@@ -1,29 +1,32 @@
 {
   "name": "dragonball",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [],
   "main": "electron/main.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "bluebird": "^3.7.2",
-    "carbon-components": "10.7.4",
-    "carbon-components-react": "7.7.4",
+    "carbon-components": "10.10.1",
+    "carbon-components-react": "7.10.1",
     "carbon-icons": "7.0.7",
-    "date-fns": "^2.8.1",
+    "date-fns": "^2.10.0",
     "electron-is-dev": "^1.1.0",
-    "emotion": "10.0.23",
-    "formik": "2.0.8",
+    "emotion": "10.0.27",
+    "formik": "2.1.4",
     "lodash": "^4.17.15",
-    "query-string": "6.9.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "query-string": "6.11.1",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "webextension-polyfill": "^0.6.0"
   },
   "devDependencies": {
-    "electron": "^7.1.5",
-    "electron-builder": "^21.2.0",
+    "electron": "^8.1.0",
+    "electron-builder": "^22.4.0",
+    "fs-extra": "^8.1.0",
+    "http-proxy-middleware": "^1.0.1",
     "icon-gen": "^2.0.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.4.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,7 +35,7 @@
     "start": "react-scripts start",
     "start:electron": "electron ./electron/main.js",
     "build": "react-scripts build",
-    "postbuild": "robocopy electron build/electron & exit 0",
+    "postbuild": "node scripts/postbuild.js",
     "package": "electron-builder build",
     "test": "react-scripts test --env=jsdom"
   },
@@ -49,6 +52,5 @@
       "main": "build/electron/main.js"
     }
   },
-  "homepage": "./",
-  "proxy": "https://www.wanted.co.kr"
+  "homepage": "./"
 }
