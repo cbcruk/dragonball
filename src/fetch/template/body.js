@@ -9,6 +9,7 @@ function body({ id, image, name }, categoryId) {
         <tr>
         <td align="center" valign="top" width="600" style="width:600px;">
         <![endif]-->
+        
         <table
           align="center"
           border="0"
@@ -69,128 +70,33 @@ function body({ id, image, name }, categoryId) {
                       </table>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-              <table
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-                class="mcnTextBlock"
-                style="min-width:100%;"
-              >
-                <tbody class="mcnTextBlockOuter">
                   <tr>
                     <td
+                      mc:edit="body_title"
                       valign="top"
-                      class="mcnTextBlockInner"
-                      style="padding-top:9px;"
+                      class="mcnTextContent"
+                      style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
                     >
-                      <!--[if mso]>
-                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                      <tr>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      <td valign="top" width="600" style="width:600px;">
-                      <![endif]-->
-                      <table
-                        align="left"
-                        border="0"
-                        cellpadding="0"
-                        cellspacing="0"
-                        style="max-width:100%; min-width:100%;"
-                        width="100%"
-                        class="mcnTextContentContainer"
-                      >
-                        <tbody>
-                          <tr>
-                            <td
-                              mc:edit="body_title"
-                              valign="top"
-                              class="mcnTextContent"
-                              style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
-                            >
-                              <h3 class="null" style="text-align: center;">
-                                <span style="font-size:22px"><strong>${name}</strong></span>
-                              </h3>
-
-                              <div style="text-align: center;">
-                                <strong>
-                                  <span style="font-size:22px">
-                                    ${JOB_CATEGORIES[categoryId]} 직군 채용중
-                                  </span>
-                                </strong>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!--[if mso]>
-                      </td>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      </tr>
-                      </table>
-                      <![endif]-->
+                      <h3 class="null" style="text-align: center;">
+                        <span style="font-size:22px"><strong>${name}</strong></span>
+                      </h3>
+                      <div style="text-align: center;">
+                        <strong>
+                          <span style="font-size:22px">
+                            ${JOB_CATEGORIES[categoryId]} 직군 채용중
+                          </span>
+                        </strong>
+                      </div>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-              <table
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-                class="mcnTextBlock"
-                style="min-width:100%;"
-              >
-                <tbody class="mcnTextBlockOuter">
                   <tr>
                     <td
+                      mc:edit="body_description"
                       valign="top"
-                      class="mcnTextBlockInner"
-                      style="padding-top:9px;"
+                      class="mcnTextContent"
+                      style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
                     >
-                      <!--[if mso]>
-                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                      <tr>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      <td valign="top" width="600" style="width:600px;">
-                      <![endif]-->
-                      <table
-                        align="left"
-                        border="0"
-                        cellpadding="0"
-                        cellspacing="0"
-                        style="max-width:100%; min-width:100%;"
-                        width="100%"
-                        class="mcnTextContentContainer"
-                      >
-                        <tbody>
-                          <tr>
-                            <td
-                              mc:edit="body_description"
-                              valign="top"
-                              class="mcnTextContent"
-                              style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
-                            >
-                              <!-- CONTENT_EDITOR -->
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!--[if mso]>
-                      </td>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      </tr>
-                      </table>
-                      <![endif]-->
+                      <!-- CONTENT_EDITOR -->
                     </td>
                   </tr>
                 </tbody>

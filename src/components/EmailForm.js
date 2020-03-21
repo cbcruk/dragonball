@@ -76,8 +76,8 @@ function EmailForm({ handleSubmit, handleChange, values, isSubmitting, jobs }) {
         open={isOpen}
         onRequestClose={closeModal}
         onSecondarySubmit={closeModal}
-        onRequestSubmit={async ({ name, hasBanner }) => {
-          await postEmailTemplate(name, {
+        onRequestSubmit={async ({ subject, hasBanner }) => {
+          await postEmailTemplate(subject, {
             items: jobs,
             hasBanner,
             categoryId: parseInt(values.categoryId, 10)

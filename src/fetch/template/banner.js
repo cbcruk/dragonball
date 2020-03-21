@@ -35,6 +35,21 @@ function banner() {
               <tbody>
                 <tr>
                   <td
+                    valign="top"
+                    class="mcnImageContent"
+                    style="padding-top: 0;padding-right: 18px;padding-bottom: 21px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: center;"
+                  >
+                    <img
+                      mc:edit="banner_image"
+                      mc:allowdesigner
+                      class="mcnImage" 
+                      style="max-width: 100%;" 
+                      src="https://gallery.mailchimp.com/36b4d3c192a2c248ee9f896dc/images/f135b8ab-26f6-4b93-8502-9cc165c451e7.png" 
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
                     mc:edit="banner_content"
                     valign="top"
                     class="mcnTextContent"

@@ -52,55 +52,7 @@ function header() {
                                 style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;"
                                 class="mcnRetinaImage"
                               />
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-                class="mcnTextBlock"
-                style="min-width:100%;"
-              >
-                <tbody class="mcnTextBlockOuter">
-                  <tr>
-                    <td
-                      valign="top"
-                      class="mcnTextBlockInner"
-                      style="padding-top:9px;"
-                    >
-                      <!--[if mso]>
-                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                      <tr>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      <td valign="top" width="600" style="width:600px;">
-                      <![endif]-->
-                      <table
-                        align="left"
-                        border="0"
-                        cellpadding="0"
-                        cellspacing="0"
-                        style="max-width:100%; min-width:100%;"
-                        width="100%"
-                        class="mcnTextContentContainer"
-                      >
-                        <tbody>
-                          <tr>
-                            <td
-                              valign="top"
-                              class="mcnTextContent"
-                              style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
-                            >
-                              <h1>
+                              <h1 style="padding-top: 13px;">
                                 <span style="font-size:24px"
                                   >나에게 딱 맞는 회사를 추천받으세요!</span
                                 >
@@ -109,14 +61,6 @@ function header() {
                           </tr>
                         </tbody>
                       </table>
-                      <!--[if mso]>
-                      </td>
-                      <![endif]-->
-
-                      <!--[if mso]>
-                      </tr>
-                      </table>
-                      <![endif]-->
                     </td>
                   </tr>
                 </tbody>

@@ -5,15 +5,19 @@ import { JOB_CATEGORIES } from '../constants'
 import getTagsById from './tags'
 
 async function fetchJobs(next, items = []) {
-  const response = await GET(next)
-  const { data, links } = response.data
-  const mergeditems = items.concat(data)
+  try {
+    const response = await GET(next)
+    const { data, links } = response.data
+    const mergeditems = items.concat(data)
 
-  if (links.next) {
-    return fetchJobs(links.next, mergeditems)
+    if (links.next) {
+      return fetchJobs(links.next, mergeditems)
+    }
+
+    return mergeditems
+  } catch (error) {
+    console.error(error)
   }
-
-  return mergeditems
 }
 
 function getCompanies({ jobs, companyIds, categoryId }) {

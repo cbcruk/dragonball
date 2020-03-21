@@ -53,17 +53,7 @@ function item({ name, image, link, position, id }) {
             </table>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      width="100%"
-      class="mcnTextBlock"
-      style="min-width:100%;"
-    >
-      <tbody class="mcnTextBlockOuter">
+
         <tr>
           <td
             valign="top"
@@ -100,69 +90,17 @@ function item({ name, image, link, position, id }) {
                     </h3>
 
                     <h4 class="null">
-                      <span style="font-size:17px"
-                        >${position}</span
-                      >
+                      <span style="font-size:17px">${position}</span>
                     </h4>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-            <!--[if mso]>
-            </td>
-            <![endif]-->
-
-            <!--[if mso]>
-            </tr>
-            </table>
-            <![endif]-->
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <table
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      width="100%"
-      class="mcnTextBlock"
-      style="min-width:100%;"
-    >
-      <tbody class="mcnTextBlockOuter">
-        <tr>
-          <td
-            valign="top"
-            class="mcnTextBlockInner"
-            style="padding-top:9px;"
-          >
-            <!--[if mso]>
-            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-            <tr>
-            <![endif]-->
-
-            <!--[if mso]>
-            <td valign="top" width="300" style="width:300px;">
-            <![endif]-->
-            <table
-              align="left"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              style="max-width:100%; min-width:100%;"
-              width="100%"
-              class="mcnTextContentContainer"
-            >
-              <tbody>
                 <tr>
                   <td
                     valign="top"
                     class="mcnTextContent"
                     style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;"
                   >
-                    <a
-                      href="${link}"
-                      target="_blank"
-                      >Learn more &gt;&gt;</a><br />&nbsp;
+                    <a href="${link}" target="_blank">Learn more &gt;&gt;</a>
                   </td>
                 </tr>
               </tbody>
@@ -170,7 +108,6 @@ function item({ name, image, link, position, id }) {
             <!--[if mso]>
             </td>
             <![endif]-->
-
             <!--[if mso]>
             </tr>
             </table>
