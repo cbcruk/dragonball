@@ -38,8 +38,8 @@ export const DROPDOWN_ITEMS = CATEGORY_IDS.map(id => ({
 
 export const HEADERS = [
   ['id', '아이디'],
-  ['name', '회사명'],
   ['image', '이미지'],
+  ['name', '회사명'],
   ['link', '링크'],
   ['position', '포지션']
 ]

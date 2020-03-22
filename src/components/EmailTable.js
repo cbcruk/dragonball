@@ -78,9 +78,9 @@ function EmailTable({ jobs, canBatchActions }) {
                   )}
                   <TableCell>{row.cells[0].value}</TableCell>
                   <TableCell>
-                    <img src={row.cells[2].value} alt="" width={125} />
+                    <img src={row.cells[1].value} alt="" width={125} />
                   </TableCell>
-                  <TableCell>{row.cells[1].value}</TableCell>
+                  <TableCell>{row.cells[2].value}</TableCell>
                   <TableCell>{row.cells[3].value}</TableCell>
                   <TableCell>{row.cells[4].value}</TableCell>
                 </TableRow>
