@@ -40,6 +40,9 @@ function head() {
           outline: none;
           text-decoration: none;
         }
+        .mcnImageContent img {
+          max-width: 100%;
+        }
         body,
         #bodyTable,
         #bodyCell {
