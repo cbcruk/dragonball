@@ -10,9 +10,12 @@
     "carbon-components": "10.10.1",
     "carbon-components-react": "7.10.1",
     "carbon-icons": "7.0.7",
+    "cypress": "^4.7.0",
+    "cypress-react-unit-test": "^4.3.1",
     "date-fns": "^2.10.0",
     "electron-is-dev": "^1.1.0",
     "emotion": "10.0.27",
+    "eslint-plugin-cypress": "^2.11.1",
     "formik": "2.1.4",
     "lodash": "^4.17.15",
     "query-string": "6.11.1",
@@ -30,7 +33,10 @@
     "web-ext": "^4.1.0"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:cypress/recommended"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,7 +44,8 @@
     "build": "react-scripts build",
     "postbuild": "cd build && web-ext build --overwrite-dest",
     "package": "electron-builder build",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "cy:open": "cypress open"
   },
   "browserslist": [
     "last 1 chrome version"
